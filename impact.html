@@ -83,7 +83,30 @@
         <div class="margin-top-90 container">
             <div class="text-center row">
                 <div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                    <h1 class="display-3 font-weight-semi-bold fancy-text margin-0">Contact us</h1>
+                    <h1 class="display-3 font-weight-semi-bold fancy-text margin-0">Our Impact Over The Years</h1>
+                    <h4 class="margin-top-30 text-dark-05 margin-bottom-20">Total <span
+                        id="typeElement"></span> </h4>
+                    <!--TypeIt script-->
+                    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+                    <script>
+                        new TypeIt('#typeElement', {
+                            speed: 60,
+                            deleteSpeed: 40,
+                        })
+                            .pause(2000)
+                            .type("funds raised: ~$28000", { delay: 2000 })
+                            .delete(null, { delay: 1000 })
+                            .type("cans donated: 4500+", { delay: 2000 })
+                            .delete(null, { delay: 1000 })
+                            .type("Christmas baskets donated: 210+", { delay: 2000 })
+                            .delete(null, { delay: 1000 })
+                            .type("students invovled: 1000+", { delay: 2000 })
+                            .delete(null, { delay: 1000 })
+                            .type("funds raised: ~$28000")
+                            .go();
+                    </script>
+                    <!--TypeIt script end-->
+
                 </div>
             </div><!-- end row -->
         </div><!-- end container -->
